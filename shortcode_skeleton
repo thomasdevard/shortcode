@@ -1,0 +1,141 @@
+<?php 
+
+//1 colonne//
+
+function onecolumn( $atts, $content = null ) {
+   return '<div class="one column">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('one', 'onecolumn');
+
+//2 colonnes//
+
+
+function twocolumns( $atts, $content = null ) {
+   return '<div class="two columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('two', 'twocolumns');
+
+//3 colonnes//
+
+function threecolumns( $atts, $content = null ) {
+   return '<div class="three columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('three', 'threecolumns');
+
+//4 colonnes//
+
+function fourcolumns( $atts, $content = null ) {
+   return '<div class="four columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('four', 'fourcolumns');
+
+//5 colonnes//
+
+function fivecolumns( $atts, $content = null ) {
+   return '<div class="five columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('five', 'fivecolumns');
+
+function fivecolumnsalpha( $atts, $content = null ) {
+   return '<div class="five columns alpha">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('fivealpha', 'fivecolumnsalpha');
+
+//6 colonnes//
+
+function sixcolumns( $atts, $content = null ) {
+   return '<div class="six columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('six', 'sixcolumns');
+
+//7colonnes//
+
+function sevencolumns( $atts, $content = null ) {
+   return '<div class="seven columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('seven', 'sevencolumns');
+
+//8 colonnes//
+
+function eightcolumns( $atts, $content = null ) {
+   return '<div class="eight columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('eight', 'eightcolumns');
+
+//9 colonnes//
+
+function ninecolumns( $atts, $content = null ) {
+   return '<div class="nine columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('nine', 'ninecolumns');
+
+//10 colonnes//
+
+function tencolumns( $atts, $content = null ) {
+   return '<div class="ten columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('ten', 'tencolumns');
+
+//11 colonnes//
+
+function elevencolumns( $atts, $content = null ) {
+   return '<div class="eleven columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('eleven', 'elevencolumns');
+
+function elevencolumnsomega( $atts, $content = null ) {
+   return '<div class="eleven columns omega">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('elevenomega', 'elevencolumnsomega');
+
+//12 colonnes//
+
+function twelvecolumns( $atts, $content = null ) {
+   return '<div class="twelve columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('twelve', 'twelvecolumns');
+
+//13 colonnes//
+
+function thirteencolumns( $atts, $content = null ) {
+   return '<div class="thirteen columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('thirteen', 'thirteencolumns');
+
+//14 colonnes//
+
+function fourteencolumns( $atts, $content = null ) {
+   return '<div class="fourteen columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('fourteen', 'fourteencolumns');
+
+//15 colonnes//
+
+function fifteencolumns( $atts, $content = null ) {
+   return '<div class="fifteen columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('fifteen', 'fifteencolumns');
+
+//16 colonnes//
+
+function sixteencolumns( $atts, $content = null ) {
+   return '<div class="sixteen columns">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('sixteen', 'sixteencolumns');
+
+
+
+
+
+//toggle shortcode
+ function toggle_shortcode( $atts, $content = null ) {
+ extract( shortcode_atts(
+ array(
+ 'title' => 'Click To Open',
+ 'color' => ''
+ ),
+ $atts ) );
+ return '<h3 class="trigger "><a href="#">'. $title .'</a></h3><div class="toggle_container '.$color.'">' . do_shortcode($content) . '</div>';
+ }
+ add_shortcode('toggle', 'toggle_shortcode');
+
