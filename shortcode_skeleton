@@ -1,19 +1,46 @@
 <?php 
 
-//1 colonne//
+//         1 colonne
+-------------------------------------------------------------------------------//
 
 function onecolumn( $atts, $content = null ) {
    return '<div class="one column">' . do_shortcode($content) . '</div>';
 }
 add_shortcode('one', 'onecolumn');
 
-//2 colonnes//
+//1 colonne alpha //
+function onecolumnalpha( $atts, $content = null ) {
+   return '<div class="one column alpha">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('one_alpha', 'onecolumnalpha');
 
+//1 colonne omega //
+function onecolumnomega( $atts, $content = null ) {
+   return '<div class="one column omega">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('one_omega', 'onecolumnomega');
+
+//         2 colonnes
+-------------------------------------------------------------------------------//
 
 function twocolumns( $atts, $content = null ) {
    return '<div class="two columns">' . do_shortcode($content) . '</div>';
 }
 add_shortcode('two', 'twocolumns');
+
+//2 colonnes alpha //
+function twocolumnalpha( $atts, $content = null ) {
+   return '<div class="two column alpha">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('two_alpha', 'twocolumnalpha');
+
+//2 colonnes omega //
+function twocolumnomega( $atts, $content = null ) {
+   return '<div class="two column omega">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('two_omega', 'twocolumnomega');
+
+
 
 //3 colonnes//
 
